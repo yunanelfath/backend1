@@ -18,7 +18,6 @@ describe('GET Greeting Api', () => {
 
   it('GET / should return greeting to the world', async (done) => {
     const response = await request.get(config.api.prefix);
-      // console.log(response.body)
 
       expect(response.body.result).toBe('hello world');
       done();
